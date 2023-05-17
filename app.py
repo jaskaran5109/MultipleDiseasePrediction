@@ -452,7 +452,7 @@ if (selected == 'Liver Disease Prediction'):
         total_protein = st.number_input('Total_Protiens')
         
     with col3:
-        ablumin = st.number_input('Albumin'1)
+        ablumin = st.number_input('Albumin')
         
     with col1:
         albumin_and_globulin = st.number_input('Albumin_and_Globulin_Ratio')
