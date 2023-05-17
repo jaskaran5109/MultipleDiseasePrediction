@@ -464,7 +464,7 @@ if (selected == 'Liver Disease Prediction'):
     if st.button("Liver Test Result"):
 #         liver_prediction = [1]
 #         liver_prediction=liver_model.predict([[age,gender,total, direct,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])                          
-        values = np.array([[age,gender,total, direct,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]]).reshape(1, -1)
+        values = np.array([[age,gender,total, direct,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])
         prediction = liver_model.predict(values)
         
         if (prediction== 1):
