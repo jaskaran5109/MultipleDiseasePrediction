@@ -69,17 +69,7 @@ if (selected == 'Diabetes Prediction'):
         Age = st.number_input('Age of the Person',key="Age of the Person", min_value=0, max_value=1000, value=0, step=1)
     
 
-    def clear_text():
-        st.session_state["Number of Pregnancies"] = ""
-        st.session_state["Glucose Level"] = ""
-        st.session_state["Blood Pressure value"] = ""
-        st.session_state["Skin Thickness value"] = ""
-        st.session_state["Insulin Level"] = ""
-        st.session_state["BMI value"] = ""
-        st.session_state["Diabetes Pedigree Function value"] = ""
-        st.session_state["Age of the Person"] = ""
-        
-    st.button("Reset", on_click=clear_text)
+  
     
     
     # code for Prediction
