@@ -428,31 +428,31 @@ if (selected == 'Liver Disease Prediction'):
     col1, col2, col3= st.columns(3)  
     
     with col1:
-        age = st.number_input('Age')
+        age = st.number_input('Age', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        gender = st.number_input('Gender')
+        gender = st.number_input('Gender', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
         total = st.number_input('Total_Bilirubin')
         
     with col1:
-        direct = st.number_input('Direct_Bilirubin')
+        direct = st.number_input('Direct_Bilirubin', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        alkaline = st.number_input('Alkaline_Phosphotase')
+        alkaline = st.number_input('Alkaline_Phosphotase', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
-        alamine = st.number_input('Alamine_Aminotransferase')
+        alamine = st.number_input('Alamine_Aminotransferase', min_value=1, max_value=10, value=5, step=1)
         
     with col1:
-        aspartate = st.number_input('Aspartate_Aminotransferase')
+        aspartate = st.number_input('Aspartate_Aminotransferase', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
         total_protein = st.number_input('Total_Protiens')
         
     with col3:
-        ablumin = st.number_input('Albumin')
+        ablumin = st.number_input('Albumin'1)
         
     with col1:
         albumin_and_globulin = st.number_input('Albumin_and_Globulin_Ratio')
