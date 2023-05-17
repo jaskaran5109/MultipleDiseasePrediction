@@ -454,6 +454,8 @@ if (selected == 'Liver Disease Prediction'):
     with col3:
         albumin_and_globulin = st.number_input('Albumin_and_Globulin_Ratio', min_value=0, max_value=1000, value=0, step=1)
 
+    with col1:
+        direct = st.number_input('Direct_Bilirubin', min_value=0, max_value=1000, value=0, step=1)
     
     liver_diagnosis = ''
     
@@ -462,7 +464,7 @@ if (selected == 'Liver Disease Prediction'):
 #         liver_prediction = [1]
 #         liver_prediction=liver_model.predict([[age,gender,total, direct,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])                          
 #         values = np.array()
-        prediction = liver_model.predict([[age,gender,total,0,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])
+        prediction = liver_model.predict([[age,gender,total,direct,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])
         
         if (prediction== 1):
             st.markdown(f'<p style="background-color:#ff4b4b;text-align:center;color:#ffffff;font-size:24px;border-radius:2%;">CHECK YOUR RESULTS</p>', unsafe_allow_html=True)
