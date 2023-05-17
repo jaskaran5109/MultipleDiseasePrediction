@@ -475,8 +475,8 @@ if (selected == 'Liver Disease Prediction'):
             def load_data():
                 return pd.DataFrame(
                     {
-                        "Label": ["Age","Gender","Total_Bilirubin", "Direct_Bilirubin","Alkaline_Phosphotase","Alamine_Aminotransferase","Aspartate_Aminotransferase","Total_Protiens","Albumin","Albumin_and_Globulin_Ratio"],
-                        "Value": [age,gender,total, direct,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin],
+                        "Label": ["Age","Gender","Total_Bilirubin","Alkaline_Phosphotase","Alamine_Aminotransferase","Aspartate_Aminotransferase","Total_Protiens","Albumin","Albumin_and_Globulin_Ratio"],
+                        "Value": [age,gender,total,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin],
                     }
             )    
             df = load_data()
