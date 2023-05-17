@@ -14,7 +14,7 @@ heart_disease_model = pickle.load(open('saved models/heart_disease_model.sav','r
 
 parkinsons_model = pickle.load(open('saved models/parkinsons_model.sav', 'rb'))
 
-# liver_model = pickle.load(open('saved models/liver_model.sav', 'rb'))
+liver_model = pickle.load(open('saved models/Liver/pkl', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
@@ -462,8 +462,8 @@ if (selected == 'Liver Disease Prediction'):
     
     # creating a button for Prediction    
     if st.button("Liver Test Result"):
-        liver_prediction = [1]
-#         liver_model.predict([[age,gender,total, direct,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])                          
+#         liver_prediction = [1]
+        liver_prediction=liver_model.predict([[age,gender,total, direct,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])                          
         
         if (liver_prediction[0] == 1):
             st.markdown(f'<p style="background-color:#ff4b4b;text-align:center;color:#ffffff;font-size:24px;border-radius:2%;">CHECK YOUR RESULTS</p>', unsafe_allow_html=True)
