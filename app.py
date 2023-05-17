@@ -437,24 +437,21 @@ if (selected == 'Liver Disease Prediction'):
         total = st.number_input('Total_Bilirubin', min_value=0, max_value=1000, value=0, step=1)
         
     with col1:
-        direct = st.number_input('Direct_Bilirubin', min_value=0, max_value=1000, value=0, step=1)
-        
-    with col2:
         alkaline = st.number_input('Alkaline_Phosphotase', min_value=0, max_value=1000, value=0, step=1)
         
-    with col3:
+    with col2:
         alamine = st.number_input('Alamine_Aminotransferase', min_value=0, max_value=1000, value=0, step=1)
         
-    with col1:
+    with col3:
         aspartate = st.number_input('Aspartate_Aminotransferase', min_value=0, max_value=1000, value=0, step=1)
         
-    with col2:
+    with col1:
         total_protein = st.number_input('Total_Protiens', min_value=0, max_value=1000, value=0, step=1)
         
-    with col3:
+    with col2:
         ablumin = st.number_input('Albumin', min_value=0, max_value=1000, value=0, step=1)
         
-    with col1:
+    with col3:
         albumin_and_globulin = st.number_input('Albumin_and_Globulin_Ratio', min_value=0, max_value=1000, value=0, step=1)
 
     
@@ -464,7 +461,7 @@ if (selected == 'Liver Disease Prediction'):
     if st.button("Liver Test Result"):
 #         liver_prediction = [1]
 #         liver_prediction=liver_model.predict([[age,gender,total, direct,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])                          
-        values = np.array([[age,gender,total, direct,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])
+        values = np.array([[age,gender,total,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])
         prediction = liver_model.predict(values)
         
         if (prediction== 1):
