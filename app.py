@@ -461,8 +461,8 @@ if (selected == 'Liver Disease Prediction'):
     if st.button("Liver Test Result"):
 #         liver_prediction = [1]
 #         liver_prediction=liver_model.predict([[age,gender,total, direct,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])                          
-        values = np.array([[age,gender,total,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])
-        prediction = liver_model.predict(values)
+#         values = np.array()
+        prediction = liver_model.predict([[age,gender,total,alkaline,alamine,aspartate,total_protein,ablumin,albumin_and_globulin]])
         
         if (prediction== 1):
             st.markdown(f'<p style="background-color:#ff4b4b;text-align:center;color:#ffffff;font-size:24px;border-radius:2%;">CHECK YOUR RESULTS</p>', unsafe_allow_html=True)
