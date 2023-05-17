@@ -43,30 +43,30 @@ if (selected == 'Diabetes Prediction'):
     
     with col1:
         if option=="Female":
-            Pregnancies = st.number_input('Number of Pregnancies',key="Number of Pregnancies")     
+            Pregnancies = st.number_input('Number of Pregnancies',key="Number of Pregnancies", min_value=1, max_value=10, value=5, step=1)     
         else:
             Pregnancies=0
             
     with col2:
-        Glucose = st.number_input('Glucose Level',key="Glucose Level")
+        Glucose = st.number_input('Glucose Level',key="Glucose Level", min_value=1, max_value=10, value=5, step=1)
     
     with col3:
-        BloodPressure = st.number_input('Blood Pressure value',key="Blood Pressure value")
+        BloodPressure = st.number_input('Blood Pressure value',key="Blood Pressure value", min_value=1, max_value=10, value=5, step=1)
     
     with col1:
-        SkinThickness = st.number_input('Skin Thickness value',key="Skin Thickness value")
+        SkinThickness = st.number_input('Skin Thickness value',key="Skin Thickness value", min_value=1, max_value=10, value=5, step=1)
     
     with col2:
-        Insulin = st.number_input('Insulin Level',key="Insulin Level")
+        Insulin = st.number_input('Insulin Level',key="Insulin Level", min_value=1, max_value=10, value=5, step=1)
     
     with col3:
-        BMI = st.number_input('BMI value',key="BMI value")
+        BMI = st.number_input('BMI value',key="BMI value", min_value=1, max_value=10, value=5, step=1)
     
     with col1:
-        DiabetesPedigreeFunction = st.number_input('Diabetes Pedigree Function value',key="Diabetes Pedigree Function value")
+        DiabetesPedigreeFunction = st.number_input('Diabetes Pedigree Function value',key="Diabetes Pedigree Function value", min_value=1, max_value=10, value=5, step=1)
     
     with col2:
-        Age = st.number_input('Age of the Person',key="Age of the Person")
+        Age = st.number_input('Age of the Person',key="Age of the Person", min_value=1, max_value=10, value=5, step=1)
     
 
     def clear_text():
@@ -172,43 +172,43 @@ if (selected == 'Heart Disease Prediction'):
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        age = st.number_input('Age',key='Age')
+        age = st.number_input('Age',key='Age', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        sex = st.number_input('Sex',key='Sex')
+        sex = st.number_input('Sex',key='Sex', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
-        cp = st.number_input('Chest Pain types',key='Chest Pain types')
+        cp = st.number_input('Chest Pain types',key='Chest Pain types', min_value=1, max_value=10, value=5, step=1)
         
     with col1:
-        trestbps = st.number_input('Resting Blood Pressure',key='Resting Blood Pressure')
+        trestbps = st.number_input('Resting Blood Pressure',key='Resting Blood Pressure', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        chol = st.number_input('Serum Cholestoral in mg/dl',key='Serum Cholestoral in mg/dl')
+        chol = st.number_input('Serum Cholestoral in mg/dl',key='Serum Cholestoral in mg/dl', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
-        fbs = st.number_input('Fasting Blood Sugar > 120 mg/dl',key='Fasting Blood Sugar > 120 mg/dl')
+        fbs = st.number_input('Fasting Blood Sugar > 120 mg/dl',key='Fasting Blood Sugar > 120 mg/dl', min_value=1, max_value=10, value=5, step=1)
         
     with col1:
-        restecg = st.number_input('Resting Electrocardiographic results',key='Resting Electrocardiographic results')
+        restecg = st.number_input('Resting Electrocardiographic results',key='Resting Electrocardiographic results', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        thalach = st.number_input('Maximum Heart Rate achieved',key='Maximum Heart Rate achieved')
+        thalach = st.number_input('Maximum Heart Rate achieved',key='Maximum Heart Rate achieved', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
-        exang = st.number_input('Exercise Induced Angina',key='Exercise Induced Angina')
+        exang = st.number_input('Exercise Induced Angina',key='Exercise Induced Angina', min_value=1, max_value=10, value=5, step=1)
         
     with col1:
-        oldpeak = st.number_input('ST depression induced by exercise',key='ST depression induced by exercise')
+        oldpeak = st.number_input('ST depression induced by exercise',key='ST depression induced by exercise', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        slope = st.number_input('Slope of the peak exercise ST segment',key='Slope of the peak exercise ST segment')
+        slope = st.number_input('Slope of the peak exercise ST segment',key='Slope of the peak exercise ST segment', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
-        ca = st.number_input('Major vessels colored by flourosopy',key='Major vessels colored by flourosopy')
+        ca = st.number_input('Major vessels colored by flourosopy',key='Major vessels colored by flourosopy', min_value=1, max_value=10, value=5, step=1)
         
     with col1:
-        thal = st.number_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect',key='thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
+        thal = st.number_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect',key='thal: 0 = normal; 1 = fixed defect; 2 = reversable defect', min_value=1, max_value=10, value=5, step=1)
         
         
      
@@ -303,70 +303,70 @@ if (selected == "Parkinsons Prediction"):
     col1, col2, col3, col4, col5 = st.columns(5)  
     
     with col1:
-        fo = st.number_input('MDVP:Fo(Hz)')
+        fo = st.number_input('MDVP:Fo(Hz)', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        fhi = st.number_input('MDVP:Fhi(Hz)')
+        fhi = st.number_input('MDVP:Fhi(Hz)', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
-        flo = st.number_input('MDVP:Flo(Hz)')
+        flo = st.number_input('MDVP:Flo(Hz)', min_value=1, max_value=10, value=5, step=1)
         
     with col4:
-        Jitter_percent = st.number_input('MDVP:Jitter(%)')
+        Jitter_percent = st.number_input('MDVP:Jitter(%)', min_value=1, max_value=10, value=5, step=1)
         
     with col5:
-        Jitter_Abs = st.number_input('MDVP:Jitter(Abs)')
+        Jitter_Abs = st.number_input('MDVP:Jitter(Abs)', min_value=1, max_value=10, value=5, step=1)
         
     with col1:
-        RAP = st.number_input('MDVP:RAP')
+        RAP = st.number_input('MDVP:RAP', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        PPQ = st.number_input('MDVP:PPQ')
+        PPQ = st.number_input('MDVP:PPQ', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
-        DDP = st.number_input('Jitter:DDP')
+        DDP = st.number_input('Jitter:DDP', min_value=1, max_value=10, value=5, step=1)
         
     with col4:
-        Shimmer = st.number_input('MDVP:Shimmer')
+        Shimmer = st.number_input('MDVP:Shimmer', min_value=1, max_value=10, value=5, step=1)
         
     with col5:
-        Shimmer_dB = st.number_input('MDVP:Shimmer(dB)')
+        Shimmer_dB = st.number_input('MDVP:Shimmer(dB)', min_value=1, max_value=10, value=5, step=1)
         
     with col1:
-        APQ3 = st.number_input('Shimmer:APQ3')
+        APQ3 = st.number_input('Shimmer:APQ3', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        APQ5 = st.number_input('Shimmer:APQ5')
+        APQ5 = st.number_input('Shimmer:APQ5', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
-        APQ = st.number_input('MDVP:APQ')
+        APQ = st.number_input('MDVP:APQ', min_value=1, max_value=10, value=5, step=1)
         
     with col4:
-        DDA = st.number_input('Shimmer:DDA')
+        DDA = st.number_input('Shimmer:DDA', min_value=1, max_value=10, value=5, step=1)
         
     with col5:
-        NHR = st.number_input('NHR')
+        NHR = st.number_input('NHR', min_value=1, max_value=10, value=5, step=1)
         
     with col1:
-        HNR = st.number_input('HNR')
+        HNR = st.number_input('HNR', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        RPDE = st.number_input('RPDE')
+        RPDE = st.number_input('RPDE', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
-        DFA = st.number_input('DFA')
+        DFA = st.number_input('DFA', min_value=1, max_value=10, value=5, step=1)
         
     with col4:
-        spread1 = st.number_input('spread1')
+        spread1 = st.number_input('spread1', min_value=1, max_value=10, value=5, step=1)
         
     with col5:
-        spread2 = st.number_input('spread2')
+        spread2 = st.number_input('spread2', min_value=1, max_value=10, value=5, step=1)
         
     with col1:
-        D2 = st.number_input('D2')
+        D2 = st.number_input('D2', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        PPE = st.number_input('PPE')
+        PPE = st.number_input('PPE', min_value=1, max_value=10, value=5, step=1)
         
     
     
@@ -434,7 +434,7 @@ if (selected == 'Liver Disease Prediction'):
         gender = st.number_input('Gender', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
-        total = st.number_input('Total_Bilirubin')
+        total = st.number_input('Total_Bilirubin', min_value=1, max_value=10, value=5, step=1)
         
     with col1:
         direct = st.number_input('Direct_Bilirubin', min_value=1, max_value=10, value=5, step=1)
@@ -449,13 +449,13 @@ if (selected == 'Liver Disease Prediction'):
         aspartate = st.number_input('Aspartate_Aminotransferase', min_value=1, max_value=10, value=5, step=1)
         
     with col2:
-        total_protein = st.number_input('Total_Protiens')
+        total_protein = st.number_input('Total_Protiens', min_value=1, max_value=10, value=5, step=1)
         
     with col3:
-        ablumin = st.number_input('Albumin')
+        ablumin = st.number_input('Albumin', min_value=1, max_value=10, value=5, step=1)
         
     with col1:
-        albumin_and_globulin = st.number_input('Albumin_and_Globulin_Ratio')
+        albumin_and_globulin = st.number_input('Albumin_and_Globulin_Ratio', min_value=1, max_value=10, value=5, step=1)
 
     
     liver_diagnosis = ''
